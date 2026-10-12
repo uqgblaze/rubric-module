@@ -1,0 +1,4 @@
+.screen .opts{gap:10px;margin-top:20px}.screen .opt{font-size:26px;padding:12px 20px}.screen .prompt{font-size:34px;line-height:1.28}.screen .fb{font-size:25px}.screen .acts{margin-top:16px}
+.rd3-actions{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;margin-top:12px}.rd3-workshop-card .prompt{font-size:36px}.rd3-workshop-card .rd-worksheet{margin:16px 0 12px;gap:13px 24px}.rd3-workshop-card .rd-checks{gap:6px}.rd3-workshop-card .rd-note{font-size:20px}
+.rd3-reading .rd3-read-question{border:1px solid var(--edge);padding:20px;margin:24px 0;border-radius:12px;background:var(--panel)}.rd3-read-options{display:grid;gap:12px}.rd3-read-options .btn{text-align:left;line-height:1.5}.rd3-read-options .btn:disabled{opacity:.65;cursor:default}.rd3-read-feedback{color:var(--good)}
+@media(max-width:500px){.rd3-reading .rd3-read-question{padding:16px}.rd3-reading .rd3-actions .btn{max-width:100%}}

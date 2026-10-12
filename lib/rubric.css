@@ -1,0 +1,29 @@
+.reading-link { position:fixed; top:8px; right:16px; z-index:20; font:14px/1.4 var(--ui); color:var(--chalk); background:var(--page); padding:7px 13px; border:1px solid var(--edge); border-radius:8px; }
+.reading-link:focus-visible { outline:3px solid var(--task); }
+/* Full-stage activities must mask a prior diagram when seeking while paused. */
+.card.screen { background:var(--board); }
+.screen .opts { display:grid; grid-template-columns:1fr; gap:16px; margin-top:28px; }
+.screen .opt { border-radius:14px; padding:18px 22px; text-align:left; font-size:28px; }
+.screen .fb { max-width:1080px; font-size:27px; }
+.screen .acts { margin-top:24px; }
+.rd-worksheet { display:grid; grid-template-columns:1fr 1fr; gap:16px 24px; margin:20px 0; }
+.rd-worksheet label { display:flex; flex-direction:column; gap:6px; font-size:23px; }
+.rd-worksheet .rd-full { grid-column:1/-1; }
+.rd-worksheet input[type=text], .rd-worksheet textarea { width:100%; padding:12px; border:1px solid var(--edge); background:#17241f; color:var(--chalk); font:22px/1.35 var(--ui); border-radius:8px; }
+.rd-worksheet textarea { resize:none; height:110px; }
+.rd-worksheet input:focus, .rd-worksheet textarea:focus { outline:3px solid var(--task); }
+.rd-checks { border:0; padding:0; margin:0; display:grid; gap:10px; }
+.rd-checks legend { margin-bottom:8px; font-size:24px; font-weight:600; }
+.rd-checks label { flex-direction:row; align-items:start; font-size:22px; }
+.rd-checks input { width:24px; height:24px; flex:none; accent-color:var(--good); }
+.rd-note { color:var(--dim); font-size:21px; margin:8px 0; }
+.rd-status { min-height:1.4em; }
+.rd-picture-check { display:grid; grid-template-columns:1fr auto; gap:6px 24px; min-height:154px; }
+.rd-picture-check .head { grid-column:1; grid-row:1; }
+.rd-picture-check .fb { grid-column:1; grid-row:2; font-size:22px; }
+.rd-picture-check .acts { grid-column:2; grid-row:1 / span 2; align-self:center; margin:0; }
+.workshop-card .prompt { font-size:37px; }
+.paused-mark { align-items:end; padding-bottom:24px; }
+.caption { bottom:78px; }
+@media(max-width:700px) { .reading-link { left:10px; right:10px; text-align:center; font-size:16px; } }
+@media(prefers-reduced-motion:reduce) { .cover *, .card, .fb, .mascot * { animation:none !important; transition:none !important; } }
